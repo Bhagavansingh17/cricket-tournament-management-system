@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #0f172a; /* Dark Slate Blue */
+    color: #cbd5e1; /* Light Gray-Blue */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #1e293b; /* Lighter Slate */
+    padding: 24px 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #334155;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.25em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #94a3b8; /* Lighter Slate Gray */
+}
+
+/* Navigation Bar */
+.main-nav {
+    background-color: #1e293b;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    gap: 15px;
+    border-bottom: 1px solid #334155;
+}
+.main-nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.main-nav a:hover {
+    background-color: #334155; /* Slate Hover */
+    color: #fff;
+}
+/* Style for login/register/logout buttons */
+.main-nav a.nav-button {
+    background-color: #4f46e5; /* Indigo */
+    color: #fff;
+}
+.main-nav a.nav-button:hover {
+    background-color: #6366f1; /* Lighter Indigo */
+}
+.main-nav a.nav-button-logout {
+    background-color: #e11d48; /* Rose Red */
+    color: #fff;
+}
+.main-nav a.nav-button-logout:hover {
+    background-color: #f43f5e; /* Lighter Rose */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    gap: 24px;
+    min-height: 60vh; /* Make sure page has content */
+}
+
+.column {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    background-color: #1e293b; /* Lighter Slate */
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+    border: 1px solid #334155;
+}
+
+.card h2 {
+    color: #FFFFFF;
+    border-bottom: 1px solid #475569;
+    padding-bottom: 12px;
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table thead {
+    background-color: #334155; /* Darker Slate */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+    font-size: 0.9em;
+}
+
+table th {
+    color: #e2e8f0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+
+table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+table tbody tr:hover {
+    background-color: #293548;
+}
+
+.captain-badge {
+    color: #facc15; /* Yellow */
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #cbd5e1;
+    font-size: 0.9em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    background-color: #334155;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-size: 0.95em;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #6366f1;
+}
+
+/* Message Styles */
+.message {
+    text-align: center;
+    color: #22c55e; /* Green */
+    font-weight: 600;
+    margin-bottom: 15px;
+    background-color: rgba(34, 197, 94, 0.1);
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    font-size: 0.95em;
+}
+.message-error {
+    color: #ef4444; /* Red */
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+
+/* --- NEW STYLE ADDED AT THE BOTTOM --- */
+.main-footer {
+    text-align: center;
+    padding: 24px;
+    background-color: #1e293b; /* Same as header */
+    color: #94a3b8; /* Slate gray */
+    margin-top: 24px; /* Space above the footer */
+    border-top: 1px solid #334155;
+    font-size: 0.9em;
+}
